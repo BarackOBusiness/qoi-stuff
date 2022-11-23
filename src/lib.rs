@@ -1,3 +1,13 @@
+pub enum Channels {
+    RGB = 3,
+    RGBA = 4,
+}
+
+pub enum ColorSpace {
+    SRGB = 0,
+    Linear = 1,
+}
+
 struct QoiHeader {
     width: u32,
     height: u32,
@@ -6,5 +16,7 @@ struct QoiHeader {
 }
 
 impl QoiHeader {
-    
+    pub fn qoi_write(filename: char) {
+        
+    }
 }
