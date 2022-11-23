@@ -1,12 +1,15 @@
 fn main() {
     println!("Hello, world!");
+        
+    println!("{}", whats(9+10));
+}
+
+fn whats(expression: i64) -> i64 {
+    let return_value = match expression {
+        19 => 21,
+        21 => -1, // Ion no
+        _  => expression
+    };
     
-    let nine = 9;
-    let ten = 12;
-    
-    if nine + ten == 21 {
-        println!("21");
-    } else {
-        println!("What the fuck man");
-    }
+    return_value
 }
